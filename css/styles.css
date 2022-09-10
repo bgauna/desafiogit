@@ -1,15 +1,16 @@
 /* Reseteo */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 html {
     font-size: 62.5%;
-    /* font-size: 1rem; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header */
+
+/**** ETIQUETAS SEMANTICAS ****/
+/* etiquetas dentro de header */
 header{
     background-color: rgb(0, 101, 46);
     position: absolute;
@@ -25,35 +26,11 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-.menuCabeceraPie{
-    color:white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 100;
-}
-.menuCabeceraFlotante{
-    color:black;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 2;
-    width: 100%;
-    padding: 20px 0;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
 header img{
     padding: 0 10px;
 }
 section img{
     padding: 0 10px;
-}
-.bloques--inblock{
-    display:inline-block;
 }
 header h1{
     display:inline-block;
@@ -65,7 +42,17 @@ section h1{
     padding:10px;
     font-size: 2.5rem;
 }
-/* barra de navegacion */
+/* estilos de textos y párrafos */
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+/* etiquetas en barra de navegacion */
 header nav{
     margin-left: 10%;
 }
@@ -99,53 +86,65 @@ section nav ul li a {
 li{
     list-style-type: none;
 }
+
+/* etiquetas dentro del cuerpo */
 /* seccion video y saber mas */
 section article iframe{
     width:75%;
     line-height:normal;
 }
-.parallax1 {
-    height: 600px;
-    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-       
-    margin-bottom:0px;
-}
-/* estilos de textos y párrafos */
-h2{
-    font-size: 3rem;
-}
-h3{
-    font-size: 2.5rem;
-    display:inline-block;
-    padding: 20px 0;
-}
-h4{
-    font-size: 1.5rem;
-    padding: 20px 20px;
-}
-/* estilos de elementos */
-section div a{
+
+/* otras secciones */
+main div a, section h3 a, section div a{
     text-decoration: none;
     color:white;
 }
-section article a img{
-    width: 100px;
-    height: 100px;
+main h2 {
     margin: 10px;
-    padding: 10px;
 }
-section article p{
+section article p, main article p, section p{
     font-size: 1.5rem;
+    padding:5px 0 20px 0;
 }
 section article div h4{
     padding:10px 0;
     font-size: 2rem;
 }
-/* estilos de clases */
+section article div p {
+    padding: 10px 0;
+}
+section article div h3{
+    display: inline-block;
+}
+
+/* footer */
+footer{
+    background-color: rgb(0, 166, 80);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer section a{
+    color:white;
+}
+footer section a i{
+    margin: 0 10px;
+}
+footer section h2 {
+    font-size: 2rem;
+}
+footer section h3 {
+    font-size: 1.5rem;
+}
+/* FIN estilo a ETIQUETAS */
+
+
+/**** CLASES ****/
+/* clases genericas BEM */
+.bloques--inblock{
+    display: inline-block;
+}
 .section__article--margin{
     margin: 10px;
     padding: 10px;
@@ -157,18 +156,103 @@ section article div h4{
     vertical-align:middle;
     font-weight: bold;
 }
-.numeroContador{
-    font-size: 9rem;
+.section__article--margin50 {
+    margin: 50px 10px;
 }
+.article__div--display{
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+}
+
+/* colores de fondo */
 .fondoVerdeHoja{
     background-color: rgb(0, 166, 80);
 }
-.btnSaberMas{
-    position:relative;
-    top:-100px;
-    left: 40px;
+.fondoVerdeClaro{
+    background-color: rgb(72, 179, 123);
+    padding:50px 10px;
+    color:white;
 }
-.btnAgendar{
+
+/* clases en textos */
+.textoNegro{
+    color:black;
+}
+.textoDeBoton{
+    padding:5px;
+    margin:5px;
+}
+
+/* clases en bordes */
+.bordesRedondos{
+    border-radius: 15px;
+}
+
+/* clases con sombras */
+.sombras{
+    margin:0;
+    padding:0;
+    border:0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* clases dentro de header */
+.menuCabeceraPie{
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.menuCabeceraFlotante{
+    color:black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    width: 100%;
+    padding: 20px 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* clases parallax */
+.parallax1 {
+    height: 600px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+    margin-bottom:0px;
+}
+
+/* clases carrusel wannabe */
+.carrusel{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* clases en contadores */
+.numeroContador{
+    font-size: 9rem;
+}
+.contadores--flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* clases en botones */
+.btnSaberMas{
     position:relative;
     top:-100px;
     left: 40px;
@@ -177,25 +261,19 @@ section article div h4{
     position: fixed;
     right:10px;
     bottom: 10px;
+    padding:0;
 }
-.fondoVerdeClaro{
-    background-color: rgb(72, 179, 123);
-    padding:50px 10px;
-    color:white;
+.btnAgendar{
+    position:relative;
+    top:-100px;
+    left: 40px;
 }
-.section__article--margin50 {
-    margin: 50px 10px;
-}
-.contadores--flex{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.article__div--display{
-    display:inline-block;
-    margin:10px;
-    padding:10px;
+
+/* clases en tarjetas */
+.tarjetas{
+    width:40%;
+    border: rgb(0, 101, 46) solid 3px;
+    font-size: 1.5rem;
 }
 .tarjetas--flex{
     display:flex;
@@ -209,41 +287,21 @@ section article div h4{
     justify-content: space-between;
     align-items: center;
 }
-.tarjetas{
-    width:40%;
-    border: rgb(0, 101, 46) solid 3px;
-    font-size: 1.5rem;
-}
 .tarjetas--presentacion{
     width:60%;
     font-size: 1.5rem;
 }
 .tarjetas--servicios{
-    width:25%;
+    width:30%;
     border: rgb(0, 101, 46) solid 3px;
     font-size: 1.5rem;
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
 }
-.textoNegro{
-    color:black;
-}
-.bordesRedondos{
-    border-radius: 15px;
-}
-.sombras{
-    margin:0;
-    padding:0;
-    border:0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.carrusel{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
+
+
+/*clases GRID */
 .grilla{
     margin:5%;
     display: grid;
@@ -277,28 +335,18 @@ section article div h4{
     width: 200px;
     height: 200px;
 }
-/* footer */
-footer{
-    background-color: rgb(0, 166, 80);
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-footer div{
-    display: inline-block;
-}
-footer div a{
-    color:white;
-}
-footer div a i{
-    margin: 0 10px;
-}
+
+/* clases en footer */
 .div__p--alignfotter{
     text-align: center;
     vertical-align:top;
     font-weight: bold;
 }
+.espacioFooterDerecho{
+    padding-right: 15%;
+}
+/* FIN CLASES */
+
 
 /* Media queries */
 @media screen and (max-width:768px) {

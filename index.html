@@ -13,17 +13,14 @@
     <title>Briant Gauna - Expandí tu yo empresario</title>
 </head>
 <body>
-    
-    
-
-
     <!--Acá iría el logo y el slogan Sticky-->
+    <!--Este menú es un menú que acompañará al usuario, con una transparencia. Creo que lo que quiero hacer se logra con Java. Si yo lo saco, no me funciona el volver arriba como quisiera, ya que el botón está atado al header-->
     <section class="menuCabeceraPie menuCabeceraFlotante">
         <img src="./imagen/logoppal.png" alt="Logo_de la Web">
         <h1>Expandí tu YO empresario</h1>
     <!--Acá iría el menú de navegación-->
-        <nav class="bloques--inblock">
-            <ul class="bloques--inblock">
+        <nav>
+            <ul>
                 <li><strong> <a href="./index.html">Home</a></strong></li>
                 <li><a href="./pages/conoceme.html">Quien Soy</a></li>
                 <li><a href="./pages/agenda.html">Agenda</a></li>
@@ -39,8 +36,8 @@
         <h1>Expandí tu YO empresario</h1>
 
     <!--Acá iría el menú de navegación-->
-        <nav class="bloques--inblock">
-            <ul class="bloques--inblock">
+        <nav>
+            <ul>
                 <li><strong> <a href="./index.html">Home</a></strong></li>
                 <li><a href="./pages/conoceme.html">Quien Soy</a></li>
                 <li><a href="./pages/agenda.html">Agenda</a></li>
@@ -51,129 +48,129 @@
     </header>
 
     <!--Acá inicia la página-->
-    <section>
+    <main class="parallax1" style="background-image: url(./imagen/fondoparallax1.png)">
         <!--Acá iría un video con un mensaje de saber +-->
-        <div class="parallax1" style="background-image: url(./imagen/fondoparallax1.png)">
-            <article>
-                <iframe width="896" height="504" src="https://www.youtube.com/embed/Szsr19kOacE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
+        <section>
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/Szsr19kOacE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
         
-            <div class="section__article--margin bloques--inblock fondoVerdeHoja btnSaberMas">
-			    <a href="pages/servicios.html">Saber más</a>
-		    </div>
-        </div>
-        <br>
-    
-        <!--Acá irían los contadores de Clientes y de Horas de Coach-->
-        <article class="section__article--margin50 contadores--flex">
-            <div class="section__article--margin bloques--inblock bordesRedondos">
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align">+ <br> de </p>
-                </div>
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align numeroContador"><strong>10</strong></p>
-                </div>
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align">Clientes <br> de <br> Coaching </p>
-                </div>
-            </div>
-            <div class="section__article--margin bloques--inblock bordesRedondos">
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align">+ <br> de </p>
-                </div>
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align numeroContador"><strong>100</strong></p>
-                </div>
-                <div class="bloques--inblock">
-                    <p class="bloques--inblock div__p--align">Horas <br> de <br> Coaching </p>
-                </div>
-            </div>
-        </article>
+        <div class="section__article--margin fondoVerdeHoja btnSaberMas bloques--inblock">
+			<a href="pages/servicios.html">Saber más</a>
+		</div>
+    </main>
 
-        <br>
-    
-        <!--Acá irían los proyectos que acompaño-->
-        <article class="fondoVerdeClaro carrusel">
-            <h2>Proyectos que acompaño</h2>
-            <a href="http://www.gtreinta.com.ar"><img src="./imagen/logo01.png" alt="" class="bordesRedondos sombras"></a>
-            <a href="https://www.diagnosticoscorporativos.com"><img src="./imagen/logo02.png" alt="" class="bordesRedondos sombras"></a>
-            <a href="https://www.burgerking.com.ar"><img src="./imagen/logo03.png" alt="" class="bordesRedondos sombras"></a>
+    <!--Acá irían los contadores de Clientes y de Horas de Coach-->
+    <section class="section__article--margin50 contadores--flex">
+        <article class="section__article--margin bloques--inblock bordesRedondos">
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align">+ <br> de </p>
+            </div>
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align numeroContador"><strong>10</strong></p>
+            </div>
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align">Clientes <br> de <br> Coaching </p>
+            </div>
         </article>
+        <article class="section__article--margin bloques--inblock bordesRedondos">
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align">+ <br> de </p>
+            </div>
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align numeroContador"><strong>100</strong></p>
+            </div>
+            <div class="bloques--inblock">
+                <p class="bloques--inblock div__p--align">Horas <br> de <br> Coaching </p>
+            </div>
+        </article>
+    </section>
+
+    <!--Acá irían los proyectos que acompaño-->
+    <section class="fondoVerdeClaro carrusel">
+
+        <h2>Proyectos que acompaño</h2>
+        <a href="http://www.gtreinta.com.ar"><img src="./imagen/logo01.png" alt="" class="bordesRedondos sombras"></a>
+        <a href="https://www.diagnosticoscorporativos.com"><img src="./imagen/logo02.png" alt="" class="bordesRedondos sombras"></a>
+        <a href="https://www.burgerking.com.ar"><img src="./imagen/logo03.png" alt="" class="bordesRedondos sombras"></a>
+    </section>
     
-        <!--Acá iría lo que puedo hacer por vos-->
-        <article class="section__article--margin50">
-            <h2>Qué puedo hacer por vos</h2>
-            <div class="contadores--flex">
+    <!--Acá iría lo que puedo hacer por vos-->
+    <section class="section__article--margin50">
+        <h2>Qué puedo hacer por vos</h2>
+        <article class="contadores--flex">
             <div class="article__div--display tarjetas bordesRedondos">
-                <div class="bloques--inblock"><i class="fa-brands fa-phoenix-framework fa-7x"></i></div>
+                <div class="bloques--inblock">
+                    <i class="fa-brands fa-phoenix-framework fa-7x"></i>
+                </div>
                 <h3>Construí tu mejor versión</h3>
                 <p>Por medio de conversaciones de coaching te acompaño a encontrar tu mejor versión</p>
             </div>
             <div class="article__div--display tarjetas bordesRedondos">
-                <div class="bloques--inblock"><i class="fa-solid fa-people-group fa-7x"></i></div>
+                <div class="bloques--inblock">
+                    <i class="fa-solid fa-people-group fa-7x"></i>
+                </div>
                 <h3>Transforma tu Equipo</h3>
                 <p class="bloques--inblock">Acompaño a Equipos de Trabajo a que puedan mejorar su performance</p>
             </div>
             <div class="article__div--display tarjetas bordesRedondos">
-                <div class="bloques--inblock"><i class="fa-solid fa-person-chalkboard fa-7x"></i></div>
+                <div class="bloques--inblock">
+                    <i class="fa-solid fa-person-chalkboard fa-7x"></i>
+                </div>
                 <h3>Entrenamientos a medida</h3>
                 <p>Junto a tu equipo, diseñamos cuáles son las habilidades que quieren potenciar</p>
             </div>
             <div class="article__div--display tarjetas bordesRedondos">
-                <div class="bloques--inblock"><i class="fa-solid fa-user-plus fa-7x"></i></div>
+                <div class="bloques--inblock">
+                    <i class="fa-solid fa-user-plus fa-7x"></i>
+                </div>
                 <h3>Reconócete los avances</h3>
                 <p>Durante el proceso vas a poder reconocerte el avance y cuánto vas mejorando.</p>
-            </div></div>
+            </div>
         </article>
+    </section>
 
-
-    
+    <section class="fondoVerdeClaro carrusel">
         <!--Acá irían las empresas que confían en mí-->
-        <article class="fondoVerdeClaro carrusel">
-            <h2>Confían en mí</h2>
-            <a href="http://www.google.com"><img src="./imagen/logo11.png" alt="" class="bordesRedondos sombras"></a>
-            <a href="https://www.playstation.com/es-ar"><img src="./imagen/logo12.png" alt="" class="bordesRedondos sombras"></a>
-            <a href="https://www.lego.com/es-ar"><img src="./imagen/logo13.png" alt="" class="bordesRedondos sombras"></a>
-        </article>
-    
-    
+        <h2>Confían en mí</h2>
+        <a href="http://www.google.com"><img src="./imagen/logo11.png" alt="" class="bordesRedondos sombras"></a>
+        <a href="https://www.playstation.com/es-ar"><img src="./imagen/logo12.png" alt="" class="bordesRedondos sombras"></a>
+        <a href="https://www.lego.com/es-ar"><img src="./imagen/logo13.png" alt="" class="bordesRedondos sombras"></a>
+    </section>
+
+    <section>
         <!--Acá iría un formulario de contacto cortito-->
-        <article>
             <h2>¿Nos conectamos?</h2>
             <ul>
                 <li>Mi nombre es</li>
                 <li>Mi WhatsApp es</li>
                 <li>Mi email es</li>
             </ul>
-            <br>
-        </article>
-
-        <!--Acá va el enlace interno de IR HACIA ARRIBA-->
-        <div id="volver" class="section__article--margin bloques--inblock fondoVerdeHoja btnVolver">
-            <h5><a href="#cabecera">Volver arriba</a></h5>
-        </div>
-
     </section>
+
+    <!--Acá va el enlace interno de IR HACIA ARRIBA-->
+    <section id="volver" class="section__article--margin bloques--inblock fondoVerdeHoja btnVolver">
+        <h3 class="textoDeBoton"><a href="#cabecera">Volver arriba</a></h3>
+    </section>
+
 
     <!--Acá va el pié de página-->
     <footer class="menuCabeceraPie">
-        <div class="article__div--display div__p--alignfotter">
-            <h5>Briant Gauna ©</h5>
-            <h5><i class="fa-solid fa-terminal"></i>../ Back to Root</h5>
-        </div>
-        <div class="article__div--display div__p--alignfotter">
-            <h6>
-                <p>Sé el cambio que quieres ver en el mundo.
-                <br>- Mahatma Gandhi</p>
-            </h6>
-        </div>
-        <div class="article__div--display div__p--alignfotter">
-            <h5>Seguime en mis redes sociales</h5>
+        <section class="article__div--display div__p--alignfotter">
+            <h2>Briant Gauna ©</h2>
+            <h3><i class="fa-solid fa-terminal"></i>../ Back to Root</h3>
+        </section>
+        <section class="article__div--display div__p--alignfotter">
+            <h3>
+                Sé el cambio que quieres ver en el mundo.<br>- Mahatma Gandhi
+            </h3>
+        </section>
+        <section class="article__div--display div__p--alignfotter espacioFooterDerecho">
+            <h2>Seguime en mis redes sociales</h2>
             <a href="http://wa.me/5493764580514"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </footer>
+                <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            </section>
+        </footer>
 </body>
 </html>
