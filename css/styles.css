@@ -240,7 +240,14 @@ footer section h3 {
     align-items: center;
 }
 
-
+/* clases con gradientes */
+.gradiente{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.gradiente2{
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+}
 /* clases en contadores */
 .numeroContador{
     font-size: 9rem;
@@ -262,6 +269,7 @@ footer section h3 {
     right:10px;
     bottom: 10px;
     padding:0;
+    border:0;
 }
 .btnAgendar{
     position:relative;
