@@ -183,7 +183,30 @@ footer section h3 {
     padding:5px;
     margin:5px;
 }
-
+.navNegrita{
+    transition: 10ms;
+}
+.navNegrita:hover{
+    font-weight: bold;
+}
+.textoAgendar{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.gradRRSS{
+    color: #000;
+    transition: all 500ms;
+}
+.gradRRSS:hover{
+    background: linear-gradient(to right, #50C9C3 0%, #96DEDA  51%, #50C9C3  100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}
 /* clases en bordes */
 .bordesRedondos{
     border-radius: 15px;
@@ -240,13 +263,21 @@ footer section h3 {
     align-items: center;
 }
 
-/* clases con gradientes */
+/* fondos con gradientes */
 .gradiente{
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    text-align: center;
+    transition: all 0.5s;
+    background-size: 200% auto;
 }
-.gradiente2{
-    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+.gradiente:hover{
+    background-position: right center; /* change the direction of the change here */
+    font-weight: bold;
+    transform:scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -moz-transform: scale(1.03);
 }
 /* clases en contadores */
 .numeroContador{
@@ -263,6 +294,18 @@ footer section h3 {
     position:relative;
     top:-100px;
     left: 40px;
+    border:0;
+    background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD  51%, #AAFFA9  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+}
+.btnSaberMas:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: underline;
 }
 .btnVolver{
     position: fixed;
@@ -270,13 +313,43 @@ footer section h3 {
     bottom: 10px;
     padding:0;
     border:0;
+    background-image: linear-gradient(to right, #50C9C3 0%, #96DEDA  51%, #50C9C3  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+}
+.btnVolver:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: underline;
 }
 .btnAgendar{
-    position:relative;
-    top:-100px;
-    left: 40px;
+    background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD  51%, #AAFFA9  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    border:0;
 }
-
+.btnAgendar:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: underline;
+}
+/* Clases en imágenes transiciones */
+.imgTransicion{
+    transition: all 1s;
+}
+.imgTransicion:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
 /* clases en tarjetas */
 .tarjetas{
     width:40%;
@@ -354,6 +427,7 @@ footer section h3 {
     padding-right: 15%;
 }
 /* FIN CLASES */
+
 
 
 /* Media queries */
