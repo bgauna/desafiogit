@@ -13,9 +13,6 @@ html {
 /* etiquetas dentro de header */
 header{
     background-color: rgb(0, 101, 46);
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 3;
     display: block;
     width: 100%;
@@ -54,22 +51,12 @@ h4{
 }
 /* etiquetas en barra de navegacion */
 header nav{
-    margin-left: 10%;
-}
-section nav{
-    margin-left: 10%;
+    margin-left: 0;
 }
 header nav ul {
     list-style: none;
 }
-section nav ul {
-    list-style: none;
-}
 header nav ul li{
-    display:inline-block;
-    color:aliceblue;
-}
-section nav ul li{
     display:inline-block;
     color:aliceblue;
 }
@@ -78,13 +65,11 @@ header nav ul li a {
     color:white;
     padding:10px;
 }
-section nav ul li a {
-    text-decoration: none;
-    color:black;
-    padding:10px;
-}
 li{
     list-style-type: none;
+}
+nav div span{
+    color:white;
 }
 
 /* etiquetas dentro del cuerpo */
@@ -183,6 +168,14 @@ footer section h3 {
     padding:5px;
     margin:5px;
 }
+.textoBlanco{
+    color: white;
+    font-size: 2.5rem;
+    font-style:italic;
+}
+.alinearCentro{
+    text-align: center;
+}
 .navNegrita{
     transition: 10ms;
 }
@@ -211,7 +204,9 @@ footer section h3 {
 .bordesRedondos{
     border-radius: 15px;
 }
-
+.sinBordes{
+    border:0;
+}
 /* clases con sombras */
 .sombras{
     margin:0;
@@ -242,7 +237,10 @@ footer section h3 {
     justify-content: space-evenly;
     align-items: center;
 }
-
+.offcanvas-ppio{
+    --bs-offcanvas-width:300px;
+    background-color: white;
+}
 /* clases parallax */
 .parallax1 {
     height: 600px;

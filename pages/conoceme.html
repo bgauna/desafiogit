@@ -15,21 +15,7 @@
 </head>
 <body>
         
-    <!--Acá iría el logo y el slogan Sticky-->
-    <section class="menuCabeceraPie menuCabeceraFlotante">
-        <img src="../imagen/logoppal.png" alt="Logo_de la Web">
-        <h1>Expandí tu YO empresario</h1>
-    <!--Acá iría el menú de navegación-->
-        <nav class="bloques--inblock">
-            <ul class="bloques--inblock">
-                <li class="navNegrita"><a href="../index.html">Home</a></li>
-                <li class="navNegrita"><strong><a href="../pages/conoceme.html">Quien Soy</a></strong></li>
-                <li class="navNegrita"><a href="../pages/agenda.html">Agenda</a></li>
-                <li class="navNegrita"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="navNegrita"><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </section>
+
 
     <!--Acá iría el logo y el slogan-->
     <header id="cabecera" class="menuCabeceraPie"> <!--Este ID es para el hipervínculo interno-->
@@ -37,15 +23,38 @@
         <h1>Expandí tu YO empresario</h1>
 
     <!--Acá iría el menú de navegación-->
-        <nav class="bloques--inblock">
-            <ul class="bloques--inblock">
-                <li class="navNegrita"><a href="../index.html">Home</a></li>
-                <li class="navNegrita"><strong><a href="./conoceme.html">Quien Soy</a></strong></li>
-                <li class="navNegrita"><a href="./agenda.html">Agenda</a></li>
-                <li class="navNegrita"><a href="./servicios.html">Servicios</a></li>
-                <li class="navNegrita"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler sinBordes" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="textoBlanco">Navegación <i class="fa-solid fa-square-caret-down"></i></span>
+          </button>
+          <div class="offcanvas offcanvas-end offcanvas-ppio" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header textoNegro">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú de Navegación</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link navNegrita" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active navNegrita" href="./conoceme.html"><strong>Quien Soy</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navNegrita" href="./agenda.html">Agenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navNegrita" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navNegrita" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     
     <!--Acá inicia la página--> 
