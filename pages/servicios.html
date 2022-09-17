@@ -17,12 +17,14 @@
         
     <!--Acá iría el logo y el slogan-->
     <header id="cabecera" class="menuCabeceraPie"> <!--Este ID es para el hipervínculo interno-->
-        <img src="../imagen/logoppal.png" alt="Logo de la Web">
-        <h1>Expandí tu YO empresario</h1>
+        <div>
+            <img src="../imagen/logoppal.png" alt="Logo de la Web">
+            <h1>Expandí tu YO empresario</h1>
+          </div>
 
     <!--Acá iría el menú de navegación-->
     <!--Acá iría el menú de navegación-->
-    <nav class="navbar">
+    <nav class="navbar navbarModificaciones">
         <div class="container-fluid">
           <button class="navbar-toggler sinBordes" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="textoBlanco">Navegación <i class="fa-solid fa-square-caret-down"></i></span>
@@ -61,51 +63,78 @@
         <section class="tarjetas--flex">
             <article class="tarjetas--servicios bordesRedondos">
                 <h3>Sesiones Individuales</h3>
-                    <ul>
-                        <li>60 min de sesión</li>
-                        <li>Presencial o Virtual</li>
-                        <li>Código de Ética ICF</li>
-                        <li>Coaching Ejecutivo</li>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">60 min de sesión</li>
+                        <li class="list-group-item">Presencial o Virtual</li>
+                        <li class="list-group-item">Código de Ética ICF</li>
+                        <li class="list-group-item">Coaching Ejecutivo</li>
                     </ul>
-                <h4>$2.500.-</h4>
+                <h3>$2.500.-</h3>
                 </article>
             <article class="tarjetas--servicios bordesRedondos">
                 <h3>Sesiones en Equipo</h3>
-                <ul>
-                    <li>90 min de sesión</li>
-                    <li>Presencial o Virtual</li>
-                    <li>Código de Ética ICF</li>
-                    <li>Coaching de Equipos</li>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">90 min de sesión</li>
+                    <li class="list-group-item">Presencial o Virtual</li>
+                    <li class="list-group-item">Código de Ética ICF</li>
+                    <li class="list-group-item">Coaching de Equipos</li>
                 </ul>
-                <h4>$7.500.-</h4>
+                <h3>$7.500.-</h3>
             </article>
             <article class="tarjetas--servicios bordesRedondos">
                 <h3>Entrenamientos in Company</h3>
-                <ul>
-                    <li>4/6 sesiones al mes</li>
-                    <li>Presencial o Virtual</li>
-                    <li>Código de Ética ICF</li>
-                    <li>Programas a medida</li>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">4/6 sesiones al mes</li>
+                    <li class="list-group-item">Presencial o Virtual</li>
+                    <li class="list-group-item">Código de Ética ICF</li>
+                    <li class="list-group-item">Programas a medida</li>
                 </ul>
-                <h4>$25.000.-</h4>
+                <h3>$25.000.-</h3>
             </article>
         </section>
     </main>
     
 
-    <section class="section__article--margin50">
-        <h3>Sesiones Individuales</h3>
-        <p>[Acá iría una descripción del servicio] Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni quos animi, corrupti natus voluptas consequuntur! Quia quas optio culpa sed adipisci, quod quaerat rerum beatae at! Adipisci quibusdam ipsam nisi officia repudiandae nostrum totam quo quod doloribus? Minima molestiae cum ratione delectus, recusandae soluta aut, veniam ad similique unde corrupti placeat omnis ipsa in amet? Sunt natus quidem adipisci ex labore incidunt aspernatur nostrum accusantium placeat nobis culpa, consectetur accusamus cum, ullam commodi error quis corrupti modi aut nihil. Inventore ab distinctio quidem dolores quasi repudiandae pariatur nisi corporis voluptatem? Consequatur, deserunt consectetur! Rem vero dolorum cupiditate quasi nobis!
-        </p>
+    <section class="accordion section__article--margin50 " id="acordeonDeServicios">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button textoAcordeonTamanio" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Sesiones Individuales
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show textoAcordeonTamanio" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body gradienteAcordeon">
+                [Acá iría una descripción del servicio] Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni quos animi, corrupti natus voluptas consequuntur! Quia quas optio culpa sed adipisci, quod quaerat rerum beatae at! Adipisci quibusdam ipsam nisi officia repudiandae nostrum totam quo quod doloribus? Minima molestiae cum ratione delectus, recusandae soluta aut, veniam ad similique unde corrupti placeat omnis ipsa in amet? Sunt natus quidem adipisci ex labore incidunt aspernatur nostrum accusantium placeat nobis culpa, consectetur accusamus cum, ullam commodi error quis corrupti modi aut nihil. Inventore ab distinctio quidem dolores quasi repudiandae pariatur nisi corporis voluptatem? Consequatur, deserunt consectetur! Rem vero dolorum cupiditate quasi nobis!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed textoAcordeonTamanio" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Sesiones de Equipo
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body gradienteAcordeon">
+                [Acá iría una descripción del servicio] Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio, doloremque est, nobis dolorum expedita facilis iusto dolore cumque eius dolor iure ipsam sit. Excepturi fuga quae corporis dignissimos illo. Praesentium nostrum amet quasi inventore, repellendus alias commodi distinctio ratione corrupti optio asperiores incidunt architecto! Quisquam est officia, laudantium et impedit modi molestias fugit beatae quaerat? Molestias magnam dignissimos architecto harum, neque facere tenetur voluptatem exercitationem recusandae pariatur quibusdam dolore minus deleniti repellat nihil itaque perferendis nulla amet deserunt optio est eos quam alias. Eaque est, totam error hic ratione, dignissimos obcaecati aut assumenda aliquid officia earum eligendi, sunt dicta!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed textoAcordeonTamanio" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Entrenamientos in Company
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body gradienteAcordeon">
+                [Acá iría una descripción del servicio] Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam impedit eos commodi porro dolores maiores quaerat dolor, eius rerum illum tenetur optio itaque repellat sint inventore? Quas, laborum eaque. Quaerat earum libero sed, natus esse ea dignissimos, ab consequatur voluptate quae eos eveniet nisi qui minus possimus pariatur at sunt. Minus eveniet possimus dolorem, illo accusamus facilis ducimus officiis laboriosam mollitia corrupti sint quibusdam sapiente debitis aliquam explicabo autem nemo consequuntur consectetur quas eaque modi! Perferendis soluta perspiciatis ad dolor iure quae necessitatibus, laudantium consequatur tempora voluptatibus cupiditate voluptatum unde! Veniam ullam, aut in neque facere et temporibus eaque.
+            </div>
+          </div>
+        </div>
     </section>
-    <section class="fondoVerdeClaro">
-        <h3>Sesiones en Equipo</h3>
-        <p>[Acá iría una descripción del servicio] Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio, doloremque est, nobis dolorum expedita facilis iusto dolore cumque eius dolor iure ipsam sit. Excepturi fuga quae corporis dignissimos illo. Praesentium nostrum amet quasi inventore, repellendus alias commodi distinctio ratione corrupti optio asperiores incidunt architecto! Quisquam est officia, laudantium et impedit modi molestias fugit beatae quaerat? Molestias magnam dignissimos architecto harum, neque facere tenetur voluptatem exercitationem recusandae pariatur quibusdam dolore minus deleniti repellat nihil itaque perferendis nulla amet deserunt optio est eos quam alias. Eaque est, totam error hic ratione, dignissimos obcaecati aut assumenda aliquid officia earum eligendi, sunt dicta!</p>
-    </section>
-    <section class="section__article--margin50">
-        <h3>Entrenamientos in Company</h3>
-        <p>[Acá iría una descripción del servicio] Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam impedit eos commodi porro dolores maiores quaerat dolor, eius rerum illum tenetur optio itaque repellat sint inventore? Quas, laborum eaque. Quaerat earum libero sed, natus esse ea dignissimos, ab consequatur voluptate quae eos eveniet nisi qui minus possimus pariatur at sunt. Minus eveniet possimus dolorem, illo accusamus facilis ducimus officiis laboriosam mollitia corrupti sint quibusdam sapiente debitis aliquam explicabo autem nemo consequuntur consectetur quas eaque modi! Perferendis soluta perspiciatis ad dolor iure quae necessitatibus, laudantium consequatur tempora voluptatibus cupiditate voluptatum unde! Veniam ullam, aut in neque facere et temporibus eaque.</p>
-    </section>
+
+
     <section class="tarjetas--flex">
         <h3>
             ¡Agendate una entrevista conmigo! La primera invito yo <i class="fa-solid fa-face-smile-wink"></i> <i class="fa-solid fa-arrow-right-long"></i>
@@ -136,10 +165,10 @@
         </section>
         <section class="article__div--display div__p--alignfotter espacioFooterDerecho">
             <h2>Seguime en mis redes sociales</h2>
-            <a href="http://wa.me/5493764580514"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="http://wa.me/5493764580514" class="hipervinculoPie"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="http://www.facebook.com/" class="hipervinculoPie"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.instagram.com/" class="hipervinculoPie"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://tiktok.com" class="hipervinculoPie"><i class="fa-brands fa-tiktok"></i></a>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
