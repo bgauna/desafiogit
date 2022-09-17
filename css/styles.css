@@ -357,6 +357,25 @@ footer section h3 {
     text-decoration: underline;
     --bs-link-hover-color:white;
 }
+.btnEnviar{
+    border:0;
+    background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD  51%, #AAFFA9  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    padding:5px;
+    position:relative;
+    left:80%;
+}
+.btnEnviar:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: underline;
+    --bs-link-hover-color:black;
+}
 .btnAgendar{
     background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD  51%, #AAFFA9  100%);
     text-align: center;

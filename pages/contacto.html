@@ -60,18 +60,32 @@
     </header>
 
     <!--Acá iría un formulario de contacto cortito-->
-    <main class="section__article--margin50">
+    <main class="section__article--margin50 texto2REM">
         <h3>
             Da el primer paso, tu mejor versión te espera <br>
             Escribime y te acompaño a crearla
         </h3>
-        <ul>
-            <li>Mi nombre es</li>
-            <li>Mi WhatsApp es</li>
-            <li>Mi email es</li>
-        </ul>
-        <p>Quiero decirte que...</p>
-        <p>Enviar</p>
+        <div class="container">
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dua Lipa">
+              <label for="exampleFormControlInput2" class="form-label">WhatsApp</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="+54 9 11 2345 6789">
+              <label for="exampleFormControlInput3" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="dualipa@gmail.com">
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Quiero decirte que..."></textarea>
+              </div>
+              <div class="btnEnviar">
+                <a href="#" class="textoAgendar">Enviar</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
 
     <!--Acá los datos de contacto-->
