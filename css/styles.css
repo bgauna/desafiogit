@@ -367,8 +367,6 @@ footer section h3 {
     border-radius: 10px;
     display: inline-block;
     padding:5px;
-    position:relative;
-    left:80%;
 }
 .btnEnviar:hover{
     background-position: right center;
@@ -506,7 +504,7 @@ footer section h3 {
         flex-flow: row wrap;
     }
     .tarjetas{
-        width:auto;
+        width:75%;
     }
     .tarjetas--presentacion{
         width:auto;
@@ -524,7 +522,11 @@ footer section h3 {
         padding:0 0 5% 0;
     }
     .media__iframe--margin{
-        padding:10%;
+        padding:2.5%;
+        margin:2.5%;
+    }
+    .imginf{
+        visibility: hidden;
     }
 }
 
@@ -551,7 +553,7 @@ footer section h3 {
         flex-flow: row wrap;
     }
     .tarjetas{
-        width:auto;
+        width:75%;
     }
     .tarjetas--presentacion{
         width:auto;
@@ -570,11 +572,15 @@ footer section h3 {
     }
     .media__iframe--margin{
         padding:10%;
+        margin:10%;
     }
     .carrusel{
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
+    }
+    .imginf{
+        visibility: hidden;
     }
 }
 
