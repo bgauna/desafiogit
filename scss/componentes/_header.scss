@@ -1,0 +1,40 @@
+header{
+    background-color: nth($colores, 1);
+    z-index: 3;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        padding: 0 10px;
+    }
+    h1{
+        display:inline-block;
+        padding:10px;
+        font-size: 2.5rem;
+    }
+    nav{
+        margin-left: 0;
+        ul {
+            list-style: none;
+            li{
+                display:inline-block;
+                color:white;
+                a {
+                    text-decoration: none;
+                    color:white;
+                    padding:10px;
+                }
+            }
+        }
+        div{
+            span{
+                color:white;
+            }
+        }
+    }
+}

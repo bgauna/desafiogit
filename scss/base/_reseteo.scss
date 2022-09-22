@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: map-get($textos,familia1),map-get($textos,familia2),map-get($textos,familia3);
+}
+body{
+    font-family: map-get($textos,familia1),map-get($textos,familia2),map-get($textos,familia3);
+}
