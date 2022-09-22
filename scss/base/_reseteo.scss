@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+    @extend %reset;
 }
 html {
     font-size: 62.5%;

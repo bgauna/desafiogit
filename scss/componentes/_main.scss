@@ -1,41 +1,67 @@
 //nesting con main
-
-
-
-section img{
-    padding: 0 10px;
+main {
+    h2 {
+        margin: 10px;
+    }
+    div{
+        a{
+            @extend %ancores;
+        }
+    }
+    article{
+        p{
+            @extend %parrafos;
+        }
+    }
 }
 
-section h1{
-    display:inline-block;
-    padding:10px;
-    font-size: 2.5rem;
+//nesting con section
+section{
+    img{
+        padding: 0 10px;
+    }
+    h1{
+        display:inline-block;
+        padding:10px;
+        font-size: 2.5rem;
+    }
+    h3{
+        a{
+            @extend %ancores;
+        }
+    }
+    p{
+        @extend %parrafos;
+    }
+    article{ 
+        iframe{
+            width:75%;
+            line-height:normal;
+        }
+        div{ 
+            h3{
+                display: inline-block;
+            }
+            h4{
+            padding:10px 0;
+            font-size: 2rem;
+            }
+            p{
+                @extend %reset;
+            }
+        }
+        p{
+            @extend %parrafos;
+        }
+    }
+    div{
+        a{
+            @extend %ancores;
+        }
+    }
 }
 
-section article iframe{
-    width:75%;
-    line-height:normal;
-}
-
-main div a, section h3 a, section div a{
-    text-decoration: none;
-    color:white;
-}
-main h2 {
-    margin: 10px;
-}
-section article p, main article p, section p{
-    font-size: 1.5rem;
-    padding:5px 0 20px 0;
-}
-section article div h4{
-    padding:10px 0;
-    font-size: 2rem;
-}
-section article div h3{
-    display: inline-block;
-}
-section article div p{
-    margin:0;
-    padding:0;
+//nesting con list items
+li{
+    list-style-type: none;
 }
