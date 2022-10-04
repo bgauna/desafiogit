@@ -23,10 +23,15 @@ section article p, section p, main article p {
 html {
   font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -127,10 +132,6 @@ footer section h3 {
 }
 
 /**** CLASES ****/
-body {
-  overflow-x: hidden !important;
-}
-
 /* clases genericas BEM */
 .bloques--inblock {
   display: inline-block;

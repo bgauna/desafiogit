@@ -1,7 +1,4 @@
 /**** CLASES ****/
-body{
-    overflow-x: hidden !important;
-}
 /* clases genericas BEM */
 .bloques--inblock{
     display: inline-block;
@@ -146,6 +143,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* fondos con gradientes */
 .gradiente{
