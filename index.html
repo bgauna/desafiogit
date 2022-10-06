@@ -187,27 +187,29 @@
     <section>
         <!--Acá iría un formulario de contacto cortito-->
             <h2>¿Nos conectamos?</h2>
-            <div class="container texto2REM">
-              <div class="row">
-                <div class="mb-3 col-6">
-                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dua Lipa">
-                  <label for="exampleFormControlInput2" class="form-label">WhatsApp</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="+54 9 11 2345 6789">
-                  <label for="exampleFormControlInput3" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="dualipa@gmail.com">
-                </div>
-                <div class="col-6">
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Quiero decirte que..."></textarea>
-                  </div>
-                  <div class="btnEnviar">
-                    <a href="#" class="textoAgendar">Enviar</a>
-                  </div>
+            <form>
+              <div class="container texto2REM">
+                <div class="row">
+                    <div class="mb-3 col-12 col-md-6">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" name="nombre" placeholder="Dua Lipa">
+                      <label for="telefono" class="form-label">WhatsApp</label>
+                      <input type="number" class="form-control" name="telefono" placeholder="+54 9 11 2345 6789">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" name="email" placeholder="dualipa@gmail.com">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" rows="3" placeholder="Quiero decirte que..."></textarea>
+                      </div>
+                      <div class="btnEnviar">
+                        <a href="#" class="textoAgendar">Enviar</a>
+                      </div>
+                    </div>
                 </div>
               </div>
-            </div>
+            </form>
     </section>
 
     <!--Acá va el enlace interno de IR HACIA ARRIBA-->
