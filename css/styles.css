@@ -472,6 +472,18 @@ footer section h3 {
   align-items: center;
 }
 
+/*clases en Acordeon*/
+.coloresAcordeon {
+  color: black;
+  background-color: white;
+  box-shadow: rgb(0, 101, 46);
+}
+
+.coloresAcordeon:not(.collapsed), .coloresAcordeon::after {
+  color: black;
+  background-color: white;
+}
+
 /*clases GRID */
 .grilla {
   margin: 5%;

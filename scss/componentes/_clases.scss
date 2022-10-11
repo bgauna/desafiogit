@@ -292,6 +292,18 @@
 }
 
 
+/*clases en Acordeon*/ 
+
+.coloresAcordeon{
+    color:black;
+    background-color: white;
+    box-shadow: nth($colores, 1);
+}
+.coloresAcordeon:not(.collapsed), .coloresAcordeon::after{
+    color:black;
+    background-color: white;
+}
+
 /*clases GRID */
 .grilla{
     margin:5%;
