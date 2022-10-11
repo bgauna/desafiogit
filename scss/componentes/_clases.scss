@@ -297,11 +297,13 @@
 .coloresAcordeon{
     color:black;
     background-color: white;
-    box-shadow: nth($colores, 1);
 }
-.coloresAcordeon:not(.collapsed), .coloresAcordeon::after{
+.coloresAcordeon:not(.collapsed), .coloresAcordeon::after, .coloresAcordeon:focus{
     color:black;
     background-color: white;
+    --bs-accordion-btn-focus-border-color: nth($colores,1);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem nth($colores,2);
+    box-shadow: 0.25rem nth($colores, 1);
 }
 
 /*clases GRID */
