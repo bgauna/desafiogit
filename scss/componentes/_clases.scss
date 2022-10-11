@@ -143,6 +143,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.paddingCarrusel{
+    padding:5px 0;
+}
 
 
 /* fondos con gradientes */
@@ -172,7 +175,10 @@
 /* clases en contadores */
 .numeroContador{
     font-size: 7.5rem;
-    @extend %reset;
+    @extend %resetfull;
+}
+.textoContador{
+    @extend %resetfull;
 }
 .contadores--flex{
     display:flex;
@@ -343,12 +349,19 @@
     section article div img{
         margin:1%;
     }
+    main article div img{
+        padding:5px;
+
+    }
+    .btnSaberMas{
+        top:0;
+    }
     .parallax1{
         height: auto;
     }
     .tarjetas--servicios{
         flex-flow: column wrap;
-        width:auto;
+        width:90vw;
         margin:2.5% 0;
     }
     .tarjetas--flex{
@@ -392,16 +405,25 @@
     section article div img{
         margin:1%;
     }
+    main article div img{
+        width:90vw;
+        height:60vw;
+        padding:5px;
+
+    }
+    .btnSaberMas{
+        top:0;
+    }
     .parallax1{
         height: auto;
     }
     .tarjetas--servicios{
         flex-flow: column wrap;
-        width:auto;
+        width:90vw;
         margin:2.5% 0;
     }
     .tarjetas--flex{
-        flex-flow: row wrap;
+        flex-flow: column wrap;
     }
     .tarjetas--flexcontacto{
         flex-flow: row wrap;
