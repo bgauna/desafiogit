@@ -298,9 +298,11 @@
     color:black;
     background-color: white;
 }
-.coloresAcordeon:not(.collapsed), .coloresAcordeon::after, .coloresAcordeon:focus{
+.coloresAcordeon:not(.collapsed),.coloresAcordeon:not(.collapsed)::after, .coloresAcordeon::after, .coloresAcordeon:focus{
     color:black;
-    background-color: white;
+    background-color: lighten(nth($colores,3), 40%);
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    --bs-accordion-active-color:nth($colores,1);
     --bs-accordion-btn-focus-border-color: nth($colores,1);
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem nth($colores,2);
     box-shadow: 0.25rem nth($colores, 1);
